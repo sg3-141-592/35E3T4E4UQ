@@ -8,7 +8,6 @@ engine = create_engine(
     connect_args={"check_same_thread": False}
 )
 
-
 Base = declarative_base()
 
 class Site(Base):
