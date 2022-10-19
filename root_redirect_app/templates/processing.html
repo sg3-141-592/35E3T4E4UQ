@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="box">
+    <div class="field">
+        <label class="label">1. URL you want to redirect</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="e.g. alex@example.com">
+        </div>
+    </div>
+
+    
+    <div class="field">
+        <label class="label">And where you want to redirect to</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="e.g. alex@example.com">
+        </div>
+    </div>
+
+    <button class="button is-primary">Next</button>
+</div>
+
+<div class="box">
+    <div class="content">
+        <b>2.</b>
+        Create an A record DNS entry on your DNS provider
+
+        <ul>
+            <li>Type - A</li>
+            <li>Name - @</li>
+            <li>Value - 209.97.128.206</li>
+        </ul>
+    </div>
+</div>
+
+<div class="columns is-mobile">
+    <div class="column is-narrow">
+        <b>3. </b> Checking the DNS mapping for <b>dishy.dev</b>
+    </div>
+    <div class="column">
+        <progress class="progress is-large is-info" max="100">60%</progress>
+    </div>
+</div>
+
+<i class="fa-solid fa-check"></i> A - 209.97.128.206
+
+</br>
+</br>
+<div class="columns is-mobile">
+    <div class="column is-narrow">
+        <b>4.</b> Generating SSL Certificate for <b>dishy.dev</b>
+    </div>
+    <div class="column">
+        <progress class="progress is-large is-info" max="100">60%</progress>
+    </div>
+</div>
+
+</br>
+</br>
+<b>5.</b> Testing redirect for <b>dishy.dev</b>
+</br>
+</br>
+<i class="fa-solid fa-check"></i> 301 Moved Permanently to www.dishy.dev
+
+{% endblock %}

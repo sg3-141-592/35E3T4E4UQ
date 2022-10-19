@@ -1,0 +1,128 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            04:fc:ac:69:89:10:4a:42:53:63:10:2d:34:65:dc:51:cb:1b
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, O = Let's Encrypt, CN = R3
+        Validity
+            Not Before: Oct 17 17:55:36 2022 GMT
+            Not After : Jan 15 17:55:35 2023 GMT
+        Subject: CN = dishy.dev
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:c7:6a:a7:43:c7:4a:d4:74:8d:cc:e5:04:83:5b:
+                    38:5f:d2:70:01:75:14:46:99:d0:24:ab:59:a8:b8:
+                    62:03:6e:72:84:8b:cc:4c:62:ef:65:cd:f3:4d:d1:
+                    13:5b:45:eb:8f:a6:33:77:f6:be:88:ed:be:bf:da:
+                    8a:7d:9b:71:1e:c1:0c:44:73:2d:8a:90:be:3a:4c:
+                    ed:93:e3:26:81:51:4d:b0:ae:f2:5b:f9:e7:40:ee:
+                    12:68:e3:d5:34:bf:0b:94:d1:6d:01:88:eb:c5:00:
+                    c9:e2:63:79:3c:8e:d8:16:09:a3:66:68:dd:58:0a:
+                    c9:20:28:76:eb:01:6d:3f:91:e9:a3:0b:f9:4d:3d:
+                    cd:e1:d4:56:39:91:3d:60:c3:43:78:fd:31:e9:6d:
+                    12:88:e2:13:14:82:6a:1c:35:10:06:69:74:b8:32:
+                    79:6d:39:e9:5e:80:9b:4a:8e:8d:ee:58:ea:d5:e3:
+                    aa:dd:cd:73:c3:1d:71:35:3c:e4:71:ab:d7:e4:d2:
+                    fc:7c:b1:b2:8d:8d:64:33:f3:5e:2c:33:21:2a:8f:
+                    8b:71:44:3e:b1:b2:6d:a0:0d:e4:5c:4b:a4:34:ae:
+                    1c:48:b7:44:de:20:64:f8:37:8a:33:06:51:c8:d3:
+                    92:3c:44:ad:20:d6:d0:af:d0:7a:91:a1:1f:e4:a7:
+                    5f:c7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Key Usage: critical
+                Digital Signature, Key Encipherment
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication, TLS Web Client Authentication
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                82:EE:32:D6:16:32:75:CC:96:C3:26:70:53:68:16:86:99:48:12:F0
+            X509v3 Authority Key Identifier: 
+                keyid:14:2E:B3:17:B7:58:56:CB:AE:50:09:40:E6:1F:AF:9D:8B:14:C2:C6
+
+            Authority Information Access: 
+                OCSP - URI:http://r3.o.lencr.org
+                CA Issuers - URI:http://r3.i.lencr.org/
+
+            X509v3 Subject Alternative Name: 
+                DNS:dishy.dev
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.2.1
+                Policy: 1.3.6.1.4.1.44947.1.1.1
+                  CPS: http://cps.letsencrypt.org
+
+            CT Precertificate SCTs: 
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : 7A:32:8C:54:D8:B7:2D:B6:20:EA:38:E0:52:1E:E9:84:
+                                16:70:32:13:85:4D:3B:D2:2B:C1:3A:57:A3:52:EB:52
+                    Timestamp : Oct 17 18:55:36.442 2022 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:45:02:21:00:9C:11:0D:3D:3F:B2:35:26:CB:FE:A4:
+                                85:F2:8E:A3:C6:7E:13:97:33:F2:20:D3:34:57:EB:7C:
+                                7E:CF:BF:B8:7C:02:20:2B:33:14:A7:18:0C:2F:C7:6C:
+                                F1:A1:50:2C:DC:EE:61:CE:DD:BE:6C:B0:BF:09:53:0E:
+                                D1:D1:7E:54:89:03:52
+                Signed Certificate Timestamp:
+                    Version   : v1 (0x0)
+                    Log ID    : AD:F7:BE:FA:7C:FF:10:C8:8B:9D:3D:9C:1E:3E:18:6A:
+                                B4:67:29:5D:CF:B1:0C:24:CA:85:86:34:EB:DC:82:8A
+                    Timestamp : Oct 17 18:55:36.447 2022 GMT
+                    Extensions: none
+                    Signature : ecdsa-with-SHA256
+                                30:44:02:20:55:94:DF:7A:DB:F2:D0:CE:18:94:0F:2B:
+                                C3:7B:9C:1A:1A:B0:8B:BD:58:69:04:4E:E4:55:3B:0F:
+                                A6:D6:C7:81:02:20:22:26:62:83:75:06:54:1F:0B:C5:
+                                38:B7:00:92:02:1D:FF:F2:E4:97:5B:67:82:54:43:13:
+                                34:1E:A0:C2:9B:11
+    Signature Algorithm: sha256WithRSAEncryption
+         58:98:29:8c:3f:12:67:83:94:63:d5:38:f1:00:d1:ab:ba:73:
+         e1:51:1d:0d:92:a4:3b:f9:b6:a7:82:63:f8:bd:29:61:87:c3:
+         c0:0b:3f:c6:4e:cd:e4:a5:dd:3b:59:f7:15:fb:05:4d:3e:76:
+         82:8e:94:36:f6:40:ea:68:4d:5d:04:c9:3e:06:9d:ac:bf:f6:
+         f8:4e:9d:d4:d5:f0:cd:fd:9d:41:63:2f:3b:a6:9d:15:06:33:
+         03:df:94:3f:fc:0c:0d:48:1a:b3:30:43:47:89:24:31:45:d6:
+         6b:41:ca:ab:e3:a3:97:65:c7:ea:18:b6:b0:ba:57:bb:8a:f5:
+         dd:8a:b8:8a:3f:a2:c6:2b:9f:f7:a9:70:9c:38:3b:dc:f6:20:
+         49:ca:1f:bc:5e:98:d7:16:1c:dd:d3:46:7e:91:66:73:98:be:
+         7d:0a:e3:de:ef:b4:b7:0c:6c:74:f2:aa:80:a4:f5:9e:b8:5e:
+         4e:bd:98:84:9d:69:39:1f:9c:ce:32:0e:7b:c1:32:a3:ae:ed:
+         a1:79:8e:20:6d:c7:9e:49:c1:b1:8d:cf:94:11:71:00:ac:0b:
+         b5:af:b7:60:9a:74:ac:41:d8:f8:55:2c:f2:c2:09:da:1f:ef:
+         09:99:53:b6:64:19:28:df:0f:e8:3a:e4:2e:66:8d:78:cd:b6:
+         8c:51:fb:0e
+-----BEGIN CERTIFICATE-----
+MIIFFzCCA/+gAwIBAgISBPysaYkQSkJTYxAtNGXcUcsbMA0GCSqGSIb3DQEBCwUA
+MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+EwJSMzAeFw0yMjEwMTcxNzU1MzZaFw0yMzAxMTUxNzU1MzVaMBQxEjAQBgNVBAMT
+CWRpc2h5LmRldjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMdqp0PH
+StR0jczlBINbOF/ScAF1FEaZ0CSrWai4YgNucoSLzExi72XN803RE1tF64+mM3f2
+vojtvr/ain2bcR7BDERzLYqQvjpM7ZPjJoFRTbCu8lv550DuEmjj1TS/C5TRbQGI
+68UAyeJjeTyO2BYJo2Zo3VgKySAodusBbT+R6aML+U09zeHUVjmRPWDDQ3j9Melt
+EojiExSCahw1EAZpdLgyeW056V6Am0qOje5Y6tXjqt3Nc8MdcTU85HGr1+TS/Hyx
+so2NZDPzXiwzISqPi3FEPrGybaAN5FxLpDSuHEi3RN4gZPg3ijMGUcjTkjxErSDW
+0K/QepGhH+SnX8cCAwEAAaOCAkMwggI/MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUE
+FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU
+gu4y1hYydcyWwyZwU2gWhplIEvAwHwYDVR0jBBgwFoAUFC6zF7dYVsuuUAlA5h+v
+nYsUwsYwVQYIKwYBBQUHAQEESTBHMCEGCCsGAQUFBzABhhVodHRwOi8vcjMuby5s
+ZW5jci5vcmcwIgYIKwYBBQUHMAKGFmh0dHA6Ly9yMy5pLmxlbmNyLm9yZy8wFAYD
+VR0RBA0wC4IJZGlzaHkuZGV2MEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQB
+gt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3Jn
+MIIBAwYKKwYBBAHWeQIEAgSB9ASB8QDvAHYAejKMVNi3LbYg6jjgUh7phBZwMhOF
+TTvSK8E6V6NS61IAAAGD500l+gAABAMARzBFAiEAnBENPT+yNSbL/qSF8o6jxn4T
+lzPyINM0V+t8fs+/uHwCICszFKcYDC/HbPGhUCzc7mHO3b5ssL8JUw7R0X5UiQNS
+AHUArfe++nz/EMiLnT2cHj4YarRnKV3PsQwkyoWGNOvcgooAAAGD500l/wAABAMA
+RjBEAiBVlN962/LQzhiUDyvDe5waGrCLvVhpBE7kVTsPptbHgQIgIiZig3UGVB8L
+xTi3AJICHf/y5JdbZ4JUQxM0HqDCmxEwDQYJKoZIhvcNAQELBQADggEBAFiYKYw/
+EmeDlGPVOPEA0au6c+FRHQ2SpDv5tqeCY/i9KWGHw8ALP8ZOzeSl3TtZ9xX7BU0+
+doKOlDb2QOpoTV0EyT4Gnay/9vhOndTV8M39nUFjLzumnRUGMwPflD/8DA1IGrMw
+Q0eJJDFF1mtByqvjo5dlx+oYtrC6V7uK9d2KuIo/osYrn/epcJw4O9z2IEnKH7xe
+mNcWHN3TRn6RZnOYvn0K497vtLcMbHTyqoCk9Z64Xk69mISdaTkfnM4yDnvBMqOu
+7aF5jiBtx55JwbGNz5QRcQCsC7Wvt2CadKxB2PhVLPLCCdof7wmZU7ZkGSjfD+g6
+5C5mjXjNtoxR+w4=
+-----END CERTIFICATE-----
