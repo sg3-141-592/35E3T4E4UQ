@@ -2,7 +2,10 @@
 
 {% block content %}
 
+{{ site.provisioning_state }}
+
 <div class="box">
+    {% if site.provisioning_state == "1-GET-USER-URL" %}
     <div class="field">
         <label class="label">1. URL you want to redirect</label>
         <div class="control">
@@ -19,10 +22,27 @@
     </div>
 
     <button class="button is-primary">Next</button>
+    {% else %}
+    <div class="field">
+        <label class="label">1. URL you want to redirect</label>
+        <div class="control">
+          <input class="input" value="{{ site.source_url }}"disabled>
+        </div>
+    </div>
+
+    
+    <div class="field">
+        <label class="label">And where you want to redirect to</label>
+        <div class="control">
+          <input class="input" value="{{ site.target_url }}" disabled>
+        </div>
+    </div>
+    {% endif %}
 </div>
 
 <div class="box">
     <div class="content">
+        {% if site.provisioning_state == "2-ADD-A-RECORD" %}
         <b>2.</b>
         Create an A record DNS entry on your DNS provider
 
@@ -31,36 +51,53 @@
             <li>Name - @</li>
             <li>Value - 209.97.128.206</li>
         </ul>
+        {% else %}
+        <b>2.</b>
+        {% endif %}
     </div>
 </div>
 
-<div class="columns is-mobile">
-    <div class="column is-narrow">
-        <b>3. </b> Checking the DNS mapping for <b>dishy.dev</b>
+<div class="box">
+    <div class="columns is-mobile">
+        <div class="column is-narrow">
+            <b>3. </b> Checking the DNS mapping for <b>dishy.dev</b>
+        </div>
+        <div class="column">
+            <progress class="progress is-large is-info" max="100">60%</progress>
+        </div>
     </div>
-    <div class="column">
-        <progress class="progress is-large is-info" max="100">60%</progress>
+
+    <!-- <i class="fa-solid fa-check"></i> -->
+    {{ site.a_record_state }}
+</div>
+
+<div class="box">
+    <div class="columns is-mobile">
+        <div class="column is-narrow">
+            <b>4.</b> Generating SSL Certificate for <b>dishy.dev</b>
+        </div>
+        <div class="column">
+            <progress class="progress is-large is-info" max="100">60%</progress>
+        </div>
     </div>
 </div>
 
-<i class="fa-solid fa-check"></i> A - 209.97.128.206
-
-</br>
-</br>
-<div class="columns is-mobile">
-    <div class="column is-narrow">
-        <b>4.</b> Generating SSL Certificate for <b>dishy.dev</b>
-    </div>
-    <div class="column">
-        <progress class="progress is-large is-info" max="100">60%</progress>
+<div class="box">
+    <b>5.</b> Testing certificate for <b>dishy.dev</b>
+    <i class="fa-solid fa-check"></i> Certificate chain for www.dishy.dev
+    <div class="content">
+        <ul>
+            <li>/CN=dishy.dev, Expires - 20221017175536Z</li>
+            <li>/C=US/O=Let's Encrypt/CN=R3, Expires - 20200904000000Z</li>
+            <li>/C=US/O=Internet Security Research Group/CN=ISRG Root X1, Expires - 20210120191403Z</li>
+        </ul>
     </div>
 </div>
 
-</br>
-</br>
-<b>5.</b> Testing redirect for <b>dishy.dev</b>
-</br>
-</br>
-<i class="fa-solid fa-check"></i> 301 Moved Permanently to www.dishy.dev
+<div class="box">
+    <b>6.</b> Testing redirect for <b>dishy.dev</b>
+    </br>
+    <i class="fa-solid fa-check"></i> 301 Moved Permanently to www.dishy.dev
+</div>
 
 {% endblock %}
